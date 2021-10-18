@@ -1,0 +1,44 @@
+.hero {
+    background: linear-gradient(90deg,#006cff 6%,#090979 38%,#020024 69%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;
+    padding-right: 50px;
+}
+
+.hero-right {
+    width: 50%;
+}
+
+.hero-right h2 {
+    margin: unset;
+    font-size: 54px;
+    line-height: 52px;
+}
+
+.hero-right p {
+    font-size: 24px;
+    /* width: 80%; */
+}
+.hero img {
+    width: 50% !important;
+    height: 250px !important;
+}
+
+.hero .hero-main {
+    margin: auto;
+}
+
+.hero .hero-main h1 {
+    margin: 5px 0;
+    font-size: 3.5rem;
+}
+
+.hero .hero-main h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    margin: unset;
+}

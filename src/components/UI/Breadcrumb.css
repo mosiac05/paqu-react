@@ -1,0 +1,45 @@
+.breadcrumb {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #050538;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.breadcrumb .breadcrumb-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.breadcrumb .breadcrumb-item i {
+    font-style: normal;
+}
+
+.breadcrumb .breadcrumb-item:nth-last-child(1) {
+    opacity: 0.5;
+    cursor: auto;
+    font-style: normal;
+
+}
+.breadcrumb .breadcrumb-item a {
+    color: #050538;
+    text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+
+}
+
+.breadcrumb .breadcrumb-item span {
+    font-weight: lighter;
+}

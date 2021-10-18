@@ -1,0 +1,46 @@
+.uni-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 25px;
+}
+
+.uni-cards-btn {
+    display: block;
+    margin: 25px auto;
+    padding: 25px 50px;
+    color: #fff;
+    background: #050538;
+    border: 2px solid #050538;
+    border-radius: 40px;
+    font-size: 20px;
+    transition: background .5s;
+    width: 160px;
+    align-self: center;
+    text-decoration: none;
+}
+
+.uni-cards-btn:hover {
+    background: transparent;
+    color: #050538;
+}
+
+.uni-cards-btn:hover > span {
+    display: inline-block;
+    animation-name: shake;
+    animation-timing-function: ease;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(0);
+    }
+
+    to { 
+        transform: translateX(70%);
+    }
+}

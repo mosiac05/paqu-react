@@ -1,0 +1,35 @@
+.uni-card-item {
+    flex-grow: 1;
+    width: 18.75%;
+    border-radius: 5px;
+    /* border: 1px solid #a8a8bf; */
+    color: #050538;
+    text-align: center;
+    background: linear-gradient(to left, transparent 50%, #050538 50%) right;
+    background-size: 210%;
+    transition: .3s ease-out;
+    /* box-shadow: unset; */
+}
+
+.uni-card-item:hover {
+    background-position: left;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: center;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.uni-card-item h3 {
+}
+
+.uni-card-item a {
+    color: #050538;
+    text-decoration: none;
+}
+
+.uni-card-item:hover > a {
+    color: #fff;
+}
+

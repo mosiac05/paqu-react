@@ -1,0 +1,62 @@
+.navbar .navbar-left, .navbar .navbar-right, .navbar, .navbar-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+.navbar .navbar-list {
+    list-style: none;
+    margin: unset;
+    padding: unset;
+}
+
+.navbar .navbar-list .navbar-item {
+}
+
+.navbar .navbar-list .navbar-item .navbar-link,
+.navbar .navbar-brand {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar .navbar-list .navbar-item .navbar-link:hover {
+
+}
+
+.navbar .navbar-list .navbar-item .navbar-link.navbar-active,
+.navbar .navbar-list .navbar-item .navbar-link:hover {
+    color: #dc3545;
+}
+
+.navbar .navbar-list .navbar-item .navbar-link.navbar-active {
+    font-weight: bold;
+}
+
+.navbar .navbar-left, 
+.navbar .navbar-right {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar .navbar-right  {
+
+}
+
+.navbar .navbar-right {
+
+}
+
+.navbar .navbar-right .navbar-item {
+    color: #dc3545;
+}

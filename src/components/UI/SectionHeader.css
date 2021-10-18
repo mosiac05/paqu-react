@@ -1,0 +1,13 @@
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h3 {
+    color: #050538;
+    margin: 5px 0;
+    font-size: 28px;
+}
+
+.section-header small {
+}
