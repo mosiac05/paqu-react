@@ -7,7 +7,7 @@ export const fetchData = async (resource = 'universities') => {
         }
 
         const data = await response.json()
-        console.log('Data::', data);
+        // console.log('Data::', data);
         const results = []
 
         for (const key in data) {
@@ -20,7 +20,7 @@ export const fetchData = async (resource = 'universities') => {
             results.push(itemData)
         }
 
-        console.log('Results'+resource, results);
+        // console.log('Results'+resource, results);
         return results
     } catch(error) {
         return []

@@ -15,6 +15,7 @@ import Faculties from './views/Faculties';
 import Departments from './views/Departments';
 import Courses from './views/Courses';
 import QuestionPapers from './views/QuestionPapers';
+import NotFound from './components/NotFound';
 
 function App() {
   const dispatch = useDispatch()
@@ -61,6 +62,9 @@ function App() {
             </Route>
             <Route path="/universities/:universityId/faculties/:facultyId/departments/:departmentId/courses/:courseId/question-papers" exact>
               <QuestionPapers />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </Layout>

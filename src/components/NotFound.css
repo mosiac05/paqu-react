@@ -1,0 +1,27 @@
+.not-found {
+    display: flex;
+    margin: 120px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.not-found p {
+    font-size: 16px;
+    color: #050538;
+}
+
+.not-found p span {
+    font-size: 40px;
+}
+
+.not-found a {
+    background: #050538;
+    padding: 9px 12px;
+    border: unset;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    width: fit-content;
+}

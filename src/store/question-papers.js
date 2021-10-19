@@ -1,31 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { fetchData } from "../utils/http";
 
 export const fetchQuestionPapers = createAsyncThunk(
     'questionPapers/fetchQuestionPapersStatus',
     async () => {
-        try {
-            const response = await fetch(`https://paqu-app-default-rtdb.firebaseio.com/question_papers.json`)
-            
-            if(!response.ok) {
-                return []
-            }
-    
-            const data = await response.json()
-            const results = []
-    
-            for (const key in data) {
-                const itemData = {id: key}
-                for (const itemKey in data[key]) {
-                    if(itemKey !== 'id') {
-                        itemData[itemKey] = data[key][itemKey]
-                    }
-                }
-                results.push(itemData)
-            }
-            return results
-        } catch(error) {
-            return []
-        }
+        const responseData = await fetchData('question_papers')
+        return responseData
     }
 )
 
