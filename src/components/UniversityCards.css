@@ -20,6 +20,7 @@
     width: 160px;
     align-self: center;
     text-decoration: none;
+    text-align: center;
 }
 
 .uni-cards-btn:hover {
@@ -42,5 +43,12 @@
 
     to { 
         transform: translateX(70%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .uni-cards-btn {
+        font-size: 15px;
+        width: 115px;
     }
 }

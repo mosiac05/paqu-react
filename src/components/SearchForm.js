@@ -1,10 +1,12 @@
+import { useSelector } from 'react-redux'
+import { useRef, useState } from 'react'
+import { useHistory } from 'react-router'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import SectionHeader from './UI/SectionHeader'
 import './SearchForm.css'
 import Card from './UI/Card'
 import Section from './UI/Section'
-import { useSelector } from 'react-redux'
-import { useRef, useState } from 'react'
-import { useHistory } from 'react-router'
 
 const SearchForm = () => {
     const history = useHistory()
@@ -119,6 +121,8 @@ const SearchForm = () => {
                             className={"input-button" + (formIsValid ? '' : ' disabled')}
                             disabled={!formIsValid}
                         >
+                            <FontAwesomeIcon icon={faSearch} />
+                            &nbsp;
                             Search Courses
                         </button>
                     </div>

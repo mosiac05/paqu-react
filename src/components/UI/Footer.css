@@ -38,7 +38,7 @@
 
 .footer div ul {
     padding: unset;
-    list-style: square;
+    list-style: none;
     list-style-position: inside;
     display: flex;
     flex-direction: column;
@@ -74,4 +74,15 @@
 .footer > p {
     text-align: center;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer div {
+        flex: 1 1 80%;
+        padding: 0 30px;
+    }
 }

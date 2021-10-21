@@ -1,3 +1,5 @@
+import { faEnvelope, faHome, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
 import './Footer.css'
@@ -31,12 +33,12 @@ const Footer = () => {
         <h3>Contact Us</h3>
         <hr />
         <ul>
-            <li>New Town, Abuja, Nigeria</li>
+            <li> <FontAwesomeIcon icon={faHome} /> New Town, Abuja, Nigeria</li>
             <li>
-                <a href="mailto:test@gmail.com">test@gmail.com</a>
+                <a href="mailto:test@gmail.com"><FontAwesomeIcon icon={faEnvelope}/> test@gmail.com</a>
             </li>
             <li>
-                <a href="tel:09000000000">09000000000</a>
+                <a href="tel:09000000000"><FontAwesomeIcon icon={faPhoneAlt}/> 09000000000</a>
             </li>
         </ul>
       </div>

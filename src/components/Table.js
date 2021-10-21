@@ -6,7 +6,7 @@ import './Table.css'
 const Table = ({ title, items, columns, pathToLoad }) => {
     // Set filtered state
     const [filteredItems, setFilteredItems] = useState([])
-    console.log(filteredItems);
+    // console.log(filteredItems);
     const router = useHistory()
     const location = useLocation()
 
@@ -15,7 +15,7 @@ const Table = ({ title, items, columns, pathToLoad }) => {
 
     // Filter items by search
     const filterHandler = (event) => {
-        const searchTerm = event.target.value.trim()
+        const searchTerm = event.target.value.trim().toLowerCase()
         if(searchTerm !== '') {
             const theFiltered = items.filter(item => item.name.toLowerCase().includes(searchTerm))
             setFilteredItems(theFiltered)

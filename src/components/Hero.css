@@ -42,3 +42,39 @@
     font-weight: normal;
     margin: unset;
 }
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+        padding-right: unset;
+        padding: 50px 20px;
+    }
+    .hero .hero-right,
+    .hero img {
+        width: 80%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero img {
+        display: none;
+    }
+    .hero-right {
+        padding: 10px 0;
+    }
+    
+}
+
+@media screen and (max-width: 481px) {
+    .hero-right h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .hero-right p {
+        font-size: 16px;
+    }
+}

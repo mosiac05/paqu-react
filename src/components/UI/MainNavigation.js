@@ -1,4 +1,6 @@
 import { NavLink, Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import "./MainNavigation.css"
 
 const MainNavigation = () => {
@@ -19,8 +21,8 @@ const MainNavigation = () => {
             </div>
             <div className="navbar-right">
                 <ul className="navbar-list">
-                    <li className="navbar-item">(+234) 900 000 000</li>
-                    <li className="navbar-item">test@gmail.com</li>
+                    <li className="navbar-item"> <FontAwesomeIcon icon={faPhone} /> (+234) 900 000 000</li>
+                    <li className="navbar-item"> <FontAwesomeIcon icon={faEnvelope} /> test@gmail.com</li>
                 </ul>
             </div>
         </nav>
